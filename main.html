@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Portfolio | Paolo Mediavillo</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .project-card:hover img { transform: scale(1.05); }
+    </style>
+</head>
+
+<body class="bg-white text-black antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-xl font-extrabold tracking-tighter">PORTFOLIO</div>
+        <div class="space-x-4 md:space-x-8 font-medium text-xs md:text-sm uppercase tracking-widest">
+            <a href="#Project" class="hover:text-gray-500 transition">Project</a>
+            <a href="#about" class="hover:text-gray-500 transition">About</a>
+            <a href="#contact" class="hover:text-gray-500 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="max-w-6xl mx-auto px-6 pt-10 md:pt-20 pb-32 grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-center md:text-left">
+        <div class="order-2 md:order-1">
+            <p class="text-sm uppercase tracking-[0.3em] mb-4 text-gray-500 font-bold">BSIT Student</p>
+            <h1 class="text-5xl md:text-8xl font-extrabold leading-none tracking-tighter mb-8">
+                Paolo <br class="hidden md:block"> Mediavillo
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-xl mx-auto md:mx-0 leading-relaxed">
+                A student from GRC who aspires to be a full-stack developer. Open to opportunities that are noble and beneficial.
+            </p>
+        </div>
+        
+        <!-- HERO IMAGE -->
+        <div class="relative order-1 md:order-2 flex justify-center">
+            <div class="relative w-64 h-64 md:w-full md:h-auto overflow-hidden rounded-sm shadow-xl">
+                 <img src="formal.jpg" alt="Profile" class="w-full h-full object-cover">
+            </div>
+            <!-- Floating Background Square -->
+            <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-gray-100 -z-10 hidden md:block"></div>
+        </div>
+    </header>
+
+    <!-- PROJECT SECTION -->
+    <section id="Project" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-100">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-4">
+            <h2 class="text-4xl font-extrabold tracking-tight">PROJECTS</h2>
+                   </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            <!-- Project 1 -->
+            <div class="project-card group cursor-pointer text-center md:text-left">
+                <div class="bg-gray-100 aspect-[4/3] mb-6 overflow-hidden rounded-sm">
+                    <img src="EDesign.png" alt="Email Design" class="object-cover w-full h-full transition-transform duration-700 ease-in-out">
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-center gap-2">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-1">Email Design</h3>
+                        <p class="text-gray-500 uppercase text-xs tracking-widest font-bold">Photoshop / Figma / Canva</p>
+                    </div>
+                    <div class="hidden md:block">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card group cursor-pointer text-center md:text-left">
+                <div class="bg-gray-100 aspect-[4/3] mb-6 overflow-hidden rounded-sm">
+                    <img src="Des.png" alt="Graphic Design" class="object-cover w-full h-full transition-transform duration-700 ease-in-out">
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-center gap-2">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-1">Graphic Design</h3>
+                        <p class="text-gray-500 uppercase text-xs tracking-widest font-bold">Photoshop / Figma / Canva</p>
+                    </div>
+                    <div class="hidden md:block">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-black text-white py-24 md:py-32 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 text-center md:text-left">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-8 leading-tight">
+                    Have a project <br> in mind?
+                </h2>
+                <p class="text-gray-400 text-lg mb-12 max-w-sm mx-auto md:mx-0">
+                    I'm currently available for freelance work and full-time positions. Let's build something great together.
+                </p>
+                <div class="space-y-4">
+                    <a href="mailto:paolo.mediavillo1234@gmail.com"
+                        class="block text-lg md:text-2xl font-bold hover:text-gray-400 transition underline underline-offset-8 decoration-1 break-words">
+                        paolo.mediavillo1234@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-end">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-gray-800 pt-10">
+                    <div>
+                        <h4 class="text-xs uppercase tracking-widest text-gray-500 font-bold mb-4">Socials</h4>
+                        <ul class="flex flex-row md:flex-col justify-center md:justify-start gap-6 md:gap-2 text-sm">
+                            <li><a href="#" class="hover:text-gray-400 transition">LinkedIn</a></li>
+                            <li><a href="#" class="hover:text-gray-400 transition">GitHub</a></li>
+                            <li><a href="#" class="hover:text-gray-400 transition">Dribbble</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xs uppercase tracking-widest text-gray-500 font-bold mb-4">Location</h4>
+                        <p class="text-sm text-gray-400">Navotas, Manila <br> Available Worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-600 py-10 px-6 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs uppercase tracking-widest">
+            <p>© Paolo Mediavillo</p>
+            <p>Built with Passion</p>
+        </div>
+    </footer>
+
+</body>
+</html>
